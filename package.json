@@ -1,0 +1,41 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Biblioteca do curso de JS com TDD na prática.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*js",
+    "prepush": "npm run lint",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allangfe/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Allan Gonçalves <allan.gonf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allangfe/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/allangfe/js-tdd-course#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "husky": "^0.15.0-rc.8",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
+}
